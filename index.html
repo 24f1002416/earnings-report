@@ -78,13 +78,16 @@
             <section>
                 <h2>Financial Formulas & Analysis</h2>
                 <p><strong>Return on Equity (ROE):</strong></p>
-                <p>$$ROE = \frac{Net\ Income}{Shareholder\ Equity} = \frac{28.6M}{125M} = 22.88\%$$</p>
+                <p>\[ROE = \frac{Net\ Income}{Shareholder\ Equity} = \frac{28.6M}{125M} = 22.88\%\]</p>
 
                 <p class="fragment"><strong>Earnings Per Share (EPS):</strong></p>
-                <p class="fragment">$$EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Average\ Shares} = \frac{28.6M - 0}{12.2M} = \$2.34$$</p>
+                <p class="fragment">\[EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Average\ Shares} = \frac{28.6M - 0}{12.2M} = \$2.34\]</p>
 
                 <p class="fragment"><strong>Price-to-Earnings Ratio (P/E):</strong></p>
-                <p class="fragment">$$P/E = \frac{Market\ Price\ per\ Share}{Earnings\ Per\ Share} = \frac{42.50}{2.34} = 18.16$$</p>
+                <p class="fragment">\[P/E = \frac{Market\ Price\ per\ Share}{Earnings\ Per\ Share} = \frac{42.50}{2.34} = 18.16\]</p>
+
+                <p class="fragment"><strong>Compound Annual Growth Rate (CAGR):</strong></p>
+                <p class="fragment">\[CAGR = \left(\frac{Ending\ Value}{Beginning\ Value}\right)^{\frac{1}{Years}} - 1\]</p>
 
                 <aside class="notes">
                     These are the key financial ratios investors care about.
@@ -203,6 +206,12 @@ console.log(`Portfolio Risk: ${(risk * 100).toFixed(2)}%`);
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ],
             transition: 'slide',
             backgroundTransition: 'fade',
+
+            // Math configuration
+            math: {
+                mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
 
             // Highlight.js configuration
             highlight: {
