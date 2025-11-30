@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarterly Earnings Report</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    <style>
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            text-transform: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section>
+                <h1>Quarterly Earnings Report</h1>
+                <h3>Q4 2024 Financial Analysis</h3>
+                <p>
+                    <small>Presented by: <a href="mailto:24f1002416@ds.study.iitm.ac.in">24f1002416@ds.study.iitm.ac.in</a></small>
+                </p>
+                <aside class="notes">
+                    Welcome everyone to our Q4 2024 quarterly earnings presentation.
+                    This report covers our financial performance and key metrics.
+                    Take your time to review each slide carefully.
+                </aside>
+            </section>
+
+            <!-- Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+
+                    Our Q4 2024 performance highlights:
+
+                    * **Revenue Growth**: 15.3% year-over-year
+                    * **Net Profit Margin**: 22.8%
+                    * **Customer Acquisition**: 45,000 new clients
+                    * **Market Share**: Increased by 3.2%
+
+                    > "Innovation distinguishes between a leader and a follower." - Steve Jobs
+                </textarea>
+                <aside class="notes">
+                    This slide shows our key performance indicators.
+                    Notice the strong revenue growth and customer acquisition numbers.
+                    These metrics demonstrate our market leadership position.
+                </aside>
+            </section>
+
+            <!-- Animated Fragments Slide -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <ul>
+                    <li class="fragment fade-in">Total Revenue: $125.4M <span class="fragment highlight-green">↑ 15.3%</span></li>
+                    <li class="fragment fade-in">Operating Income: $38.2M <span class="fragment highlight-green">↑ 18.7%</span></li>
+                    <li class="fragment fade-in">Net Income: $28.6M <span class="fragment highlight-green">↑ 21.4%</span></li>
+                    <li class="fragment fade-in">EPS: $2.34 <span class="fragment highlight-blue">Beat estimates by $0.12</span></li>
+                </ul>
+                <aside class="notes">
+                    Walk through each metric one by one.
+                    Emphasize the year-over-year growth percentages.
+                    Highlight that we beat EPS estimates by $0.12.
+                </aside>
+            </section>
+
+            <!-- Mathematical Equations Slide -->
+            <section>
+                <h2>Financial Formulas & Analysis</h2>
+                <p><strong>Return on Equity (ROE):</strong></p>
+                <p>$$ROE = \frac{Net\ Income}{Shareholder\ Equity} = \frac{28.6M}{125M} = 22.88\%$$</p>
+
+                <p class="fragment"><strong>Earnings Per Share (EPS):</strong></p>
+                <p class="fragment">$$EPS = \frac{Net\ Income - Preferred\ Dividends}{Weighted\ Average\ Shares} = \frac{28.6M - 0}{12.2M} = \$2.34$$</p>
+
+                <p class="fragment"><strong>Price-to-Earnings Ratio (P/E):</strong></p>
+                <p class="fragment">$$P/E = \frac{Market\ Price\ per\ Share}{Earnings\ Per\ Share} = \frac{42.50}{2.34} = 18.16$$</p>
+
+                <aside class="notes">
+                    These are the key financial ratios investors care about.
+                    Our ROE of 22.88% is above industry average.
+                    P/E ratio of 18.16 shows we're fairly valued relative to earnings.
+                </aside>
+            </section>
+
+            <!-- Code Sample Slide -->
+            <section>
+                <h2>Revenue Analysis Script</h2>
+                <pre><code class="python" data-trim data-line-numbers="1-2|4-8|10-15">
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load quarterly revenue data
+revenue_data = {
+    'Q1': 105.2, 'Q2': 112.8,
+    'Q3': 118.6, 'Q4': 125.4
+}
+
+# Calculate growth rate
+quarters = list(revenue_data.keys())
+revenue = list(revenue_data.values())
+growth_rate = [(revenue[i] - revenue[i-1]) / revenue[i-1] * 100
+               for i in range(1, len(revenue))]
+
+print(f"Q4 Revenue: ${revenue[-1]}M")
+print(f"YoY Growth: {growth_rate[-1]:.2f}%")
+                </code></pre>
+                <aside class="notes">
+                    This Python script demonstrates our data analysis approach.
+                    We use pandas for data manipulation and matplotlib for visualization.
+                    The code calculates quarter-over-quarter growth rates.
+                </aside>
+            </section>
+
+            <!-- Investment Portfolio Code -->
+            <section>
+                <h2>Portfolio Optimization Code</h2>
+                <pre><code class="javascript" data-trim data-line-numbers>
+// Portfolio risk calculation
+function calculatePortfolioRisk(weights, covMatrix) {
+    let variance = 0;
+
+    for (let i = 0; i < weights.length; i++) {
+        for (let j = 0; j < weights.length; j++) {
+            variance += weights[i] * weights[j] * covMatrix[i][j];
+        }
+    }
+
+    return Math.sqrt(variance);
+}
+
+// Example usage
+const weights = [0.4, 0.35, 0.25];
+const risk = calculatePortfolioRisk(weights, covarianceMatrix);
+console.log(`Portfolio Risk: ${(risk * 100).toFixed(2)}%`);
+                </code></pre>
+                <aside class="notes">
+                    This JavaScript code shows our portfolio risk management system.
+                    It calculates portfolio variance using the covariance matrix.
+                    This is part of our automated risk assessment tools.
+                </aside>
+            </section>
+
+            <!-- Animated Summary -->
+            <section>
+                <h2>Looking Ahead: Q1 2025</h2>
+                <div class="fragment fade-up">
+                    <h3>Strategic Initiatives</h3>
+                    <ul>
+                        <li class="fragment">Launch new mobile banking platform</li>
+                        <li class="fragment">Expand into emerging markets</li>
+                        <li class="fragment">AI-powered customer service rollout</li>
+                    </ul>
+                </div>
+                <div class="fragment fade-up">
+                    <h3>Financial Projections</h3>
+                    <p>Expected Q1 2025 revenue: <strong class="fragment highlight-green">$132M - $138M</strong></p>
+                </div>
+                <aside class="notes">
+                    Outline our strategic roadmap for Q1 2025.
+                    Emphasize our focus on digital transformation.
+                    Revenue guidance shows continued strong growth trajectory.
+                </aside>
+            </section>
+
+            <!-- Final Slide -->
+            <section>
+                <h1>Thank You</h1>
+                <h3>Questions & Discussion</h3>
+                <p>
+                    Contact: <a href="mailto:24f1002416@ds.study.iitm.ac.in">24f1002416@ds.study.iitm.ac.in</a>
+                </p>
+                <aside class="notes">
+                    Open the floor for questions.
+                    Be prepared to discuss any of the metrics in detail.
+                    Thank the stakeholders for their time and attention.
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+            transition: 'slide',
+            backgroundTransition: 'fade'
+        });
+    </script>
+</body>
+</html>
