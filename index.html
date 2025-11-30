@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="24f1002416@ds.study.iitm.ac.in">
     <title>Quarterly Earnings Report</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
@@ -14,6 +15,10 @@
         .reveal h1, .reveal h2, .reveal h3 {
             text-transform: none;
         }
+        .email {
+            font-size: 1.2em;
+            color: #42affa;
+        }
     </style>
 </head>
 <body>
@@ -23,10 +28,8 @@
             <section>
                 <h1>Quarterly Earnings Report</h1>
                 <h3>Q4 2024 Financial Analysis</h3>
-                <p>Presented by: 24f1002416@ds.study.iitm.ac.in</p>
-                <p>
-                    Email: <a href="mailto:24f1002416@ds.study.iitm.ac.in">24f1002416@ds.study.iitm.ac.in</a>
-                </p>
+                <br>
+                <p class="email">24f1002416@ds.study.iitm.ac.in</p>
                 <aside class="notes">
                     Welcome everyone to our Q4 2024 quarterly earnings presentation.
                     This report covers our financial performance and key metrics.
@@ -197,7 +200,7 @@ console.log(`Portfolio Risk: ${(risk * 100).toFixed(2)}%`);
     <script>
         Reveal.initialize({
             hash: true,
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ],
             transition: 'slide',
             backgroundTransition: 'fade'
         });
