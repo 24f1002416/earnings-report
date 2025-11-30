@@ -96,7 +96,7 @@
             <!-- Code Sample Slide -->
             <section>
                 <h2>Revenue Analysis Script</h2>
-                <pre><code class="python" data-trim data-line-numbers="1-2|4-8|10-15">
+                <pre><code class="language-python" data-trim data-line-numbers="1-2|4-8|10-15">
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -125,7 +125,7 @@ print(f"YoY Growth: {growth_rate[-1]:.2f}%")
             <!-- Investment Portfolio Code -->
             <section>
                 <h2>Portfolio Optimization Code</h2>
-                <pre><code class="javascript" data-trim data-line-numbers>
+                <pre><code class="language-javascript" data-trim data-line-numbers>
 // Portfolio risk calculation
 function calculatePortfolioRisk(weights, covMatrix) {
     let variance = 0;
@@ -202,7 +202,15 @@ console.log(`Portfolio Risk: ${(risk * 100).toFixed(2)}%`);
             hash: true,
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ],
             transition: 'slide',
-            backgroundTransition: 'fade'
+            backgroundTransition: 'fade',
+
+            // Highlight.js configuration
+            highlight: {
+                beforeHighlight: (hljs) => {
+                    // Register additional languages if needed
+                },
+                escapeHTML: false
+            }
         });
     </script>
 </body>
